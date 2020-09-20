@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <p class="mx-auto p">Todo App Made By Zubair Afzal</p>
+    </nav>
+    <div class="container">
+        <h1 class="h1">Todo List</h1>
+        <div class="container-1">
+            <div class="content mt-5 mx-auto">
+                <input class="input" id="task-input" type="text" placeholder="Enter your daily tasks here...">
+                <span class="border"></span>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-1 btn-outline-success" onclick="addTask()">ADD TASK</button>
+            <button type="button" class="btn btn-2 btn-outline-danger" onclick="deleteAllTask()">DELETE ALL</button>
+        </div>
+        <div class="tasks-container">
+            <ul id="task-list">
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+</html>
