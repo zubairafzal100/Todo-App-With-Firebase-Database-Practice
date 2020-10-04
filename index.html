@@ -8,6 +8,26 @@
     <title>Todo App</title>
     <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- Firebase Api for Database -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyBwHH5_j5fUhf7E51uMHU121zreJSM958E",
+            authDomain: "todoapp-withfirebase-database.firebaseapp.com",
+            databaseURL: "https://todoapp-withfirebase-database.firebaseio.com",
+            projectId: "todoapp-withfirebase-database",
+            storageBucket: "todoapp-withfirebase-database.appspot.com",
+            messagingSenderId: "947057402814",
+            appId: "1:947057402814:web:74b0368d2353e712c70fef",
+            measurementId: "G-GLMLKC3H5W"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
 
 <body>
@@ -35,4 +55,5 @@
 </body>
 
 <script src="app.js"></script>
+
 </html>
